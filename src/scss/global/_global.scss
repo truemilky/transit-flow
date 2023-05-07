@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.--just-space {
+  justify-content: space-between;
+}
+
+.--just-center {
+  justify-content: center;
+}
+
+.--just-end {
+  justify-content: flex-end;
+}
+
+.--align-str {
+  align-items: stretch;
+}
+
+.--align-center {
+  align-items: center;
+}
+
+.--align-end {
+  align-items: flex-end;
+}
+
+.--dir-col {
+  flex-direction: column;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Rubik-Regular", sans-serif;
+  font-size: 1rem;
+  color: #1C1F35;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container, .container__wide {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  &__wide {
+    max-width: 1675px;
+  }
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+.button {
+  font-family: "Rubik-SemiBold", sans-serif;
+  font-size: 16px;
+  color: #000;
+  padding: 30px 50px;
+  border: none;
+  background-color: #ffb629;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #ff6629;
+    color: #fff;
+  }
+
+  &__intro {
+    padding: 20px 45px;
+  }
+
+  &__show-more {
+    display: block;
+    background: #091242;
+    color: #fff;
+    margin: 65px auto 0;
+    padding: 20px 55px;
+
+    &:hover {
+      background: #1F2A69;;
+    }
+  }
+
+  &__form {
+    padding: 20px 30px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 1675.98px) {
+  .container__wide {
+      max-width: 1340px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .container {
+    max-width: 990px;
+  }
+}
+
+@media(max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .header__button {
+    max-width: 170px;
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .button__show-more {
+    margin-top: 35px;
+  }
+}
+
+@media(max-width: 600px) {
+  .button__form {
+    display: block;
+    margin: 0 auto;
+  }
+}

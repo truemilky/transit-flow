@@ -1,0 +1,271 @@
+.why-choose {
+  padding: 100px 0;
+  background: linear-gradient(to right, #091242 50%, #f4f4f4 50%);
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left {
+    max-width: 930px;
+    width: 100%;
+    margin-right: 50px;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-mob {
+      display: none;
+    }
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+
+    &-block {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 420px;
+      width: 100%;
+      padding: 30px;
+      background: linear-gradient(
+        94.06deg,
+        #ffb629 -1.21%,
+        #ffda56 58.66%,
+        #ffd7a6 116.84%
+      );
+
+      &-image {
+        margin-right: 20px;
+
+        & img {
+          width: 65px;
+        }
+      }
+
+      & span {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &__right {
+    max-width: 555px;
+    width: 100%;
+  }
+
+  &__theme {
+    display: inline-block;
+    font-size: 14px;
+    background-color: rgba(232, 232, 232, 0.5);
+    padding: 3px 8px;
+    border-left: 4px solid #ffb629;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-family: "Rubik-Medium", sans-serif;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666c89;
+    margin-bottom: 60px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: 256px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-icon {
+      width: 63px;
+      margin-right: 10px;
+    }
+
+    & span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 1675.98px) {
+  .why-choose__left {
+    max-width: none;
+    width: 670px;
+  }
+
+  .why-choose__left-block {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1310px) {
+  .why-choose__right {
+    max-width: 512px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .why-choose {
+    padding: 85px 0 55px;
+  }
+  .why-choose__left {
+    max-width: none;
+    width: 50%;
+  }
+
+  .why-choose__right {
+    max-width: none;
+    width: 50%;
+  }
+
+  .why-choose__left-block-image img {
+    width: 45px;
+  }
+
+  .why-choose__item span {
+    font-size: 18px;
+  }
+
+  .why-choose__item-icon {
+    width: auto;
+  }
+
+  .why-choose__item-icon img {
+    width: 55px;
+  }
+
+  .why-choose__item {
+    max-width: 234px;
+  }
+}
+
+@media(max-width: 1026px) {
+  .why-choose__item {
+    max-width: 215px;
+  }
+}
+
+@media(max-width: 992px) {
+  .why-choose {
+    background: #091242;
+  }
+
+  .why-choose__left-desk {
+    display: none;
+  }
+
+  .why-choose__left-mob {
+    display: block;
+  }
+
+  .why-choose__left {
+    width: auto;
+  }
+
+  .why-choose__left, .why-choose__right {
+    max-width: 720px;
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .why-choose__title {
+    color: #fff;
+  }
+
+  .why-choose__text {
+    color: #fff;
+  }
+
+  .why-choose__theme {
+    color: #fff;
+  }
+
+  .why-choose__text {
+    margin-bottom: 30px;
+  }
+
+  .why-choose__left {
+    margin: 0 auto 30px;
+  }
+
+  .why-choose__item span {
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .why-choose__left-block span {
+    font-size: 18px;
+  }
+
+  .why-choose__items {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose {
+    padding: 65px 0;
+  }
+  
+  .why-choose__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .why-choose__left-block {
+    max-width: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .why-choose {
+    padding: 50px 0;
+  }
+
+  .why-choose__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .why-choose__left-block-image img {
+    width: 33px;
+  }
+
+  .why-choose__item-icon img {
+    width: 48px;
+  }
+  .why-choose__item span {
+    font-size: 17px;
+  }
+}

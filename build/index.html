@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-testimonials-startpack v3.0</title>
+</head>
+
+
+<body>
+
+	<main class="main">
+		<section class="intro">
+			<header class="header header__desk">
+    <div class="header__top">
+        <div class="container header__top-wrapper">
+            <div class="header__logo">
+                <img src="img/sprite.svg#logo" alt="">
+            </div>
+
+            <div class="header__contacts">
+                <div class="header__contacts-item">
+                    <div class="header__contacts-icon">
+                        <img src="img/time-icon.png" alt="">
+                    </div>
+
+                    <div class="header__contacts-text">
+                        Mon - Sat 9.00 - 18.00<br>
+                        Sunday Closed
+                    </div>
+                </div>
+
+                <div class="header__contacts-item">
+                    <div class="header__contacts-icon">
+                        <img src="img/message-icon.png" alt="">
+                    </div>
+
+                    <div class="header__contacts-text">
+                        Email<br>
+                        <a href="mailto:contact@logistics.com">contact@logistics.com</a>
+                    </div>
+                </div>
+
+                <div class="header__contacts-item">
+                    <div class="header__contacts-icon">
+                        <img src="img/phone-icon.png" alt="">
+                    </div>
+
+                    <div class="header__contacts-text">
+                        Call Us<br>
+                        <a href="tel:(00) 112 365 489">(00) 112 365 489</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__bottom">
+        <div class="container header__bottom-wrapper">
+            <nav>
+                <a href="#">Home</a>
+                <span></span>
+                <a href="#">About</a>
+                <span></span>
+                <div class="dropdown">
+                    <button onclick="dropdown()" class="dropbtn">Pages
+                        <svg class="dropdown__arrow" width="10px" height="10px" fill="#fff"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use class="dropdown__arrow-use" xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="components/page-blocks/about.html">About Us</a>
+                        <a href="components/page-blocks/services.html">Services</a>
+                        <a href="components/page-blocks/project.html">Project</a>
+                        <a href="components/page-blocks/blog.html">Blog</a>
+                        <a href="components/page-blocks/team.html">Team</a>
+                        <a href="components/page-blocks/contact.html">Contact</a>
+                        <a href="components/page-blocks/pricing.html">Pricing</a>
+                        <a href="components/page-blocks/licenses.html">Licenses</a>
+                        <a href="components/page-blocks/protection.html">Protection</a>
+                    </div>
+                </div>
+
+                <span></span>
+                <a href="#">Project</a>
+                <span></span>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="header__bottom-right">
+                <div class="header__bottom-socials">
+                    <a href="https://www.instagram.com/">
+                        <svg class="header__instagram" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/">
+                        <svg class="header__facebook" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com/">
+                        <svg class="header__twitter" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/">
+                        <svg class="header__linkedin" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprite.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="button header__button">Request Quote<span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header__mob">
+    <div class="header__mob-top">
+        <div class="header__mob-logo">
+            <img src="img/sprite.svg#logo" alt="">
+        </div>
+
+        <div id="mobile-menu" class="header__mob-menu">
+            <span class="header__mob-menu-burger"></span>
+        </div>
+    </div>
+
+    <div class="header__mob-body">
+        <div class="header__contacts">
+            <div class="header__contacts-item">
+                <div class="header__contacts-icon">
+                    <img src="img/time-icon.png" alt="">
+                </div>
+
+                <div class="header__contacts-text">
+                    Mon - Sat 9.00 - 18.00<br>
+                    Sunday Closed
+                </div>
+            </div>
+
+            <div class="header__contacts-item">
+                <div class="header__contacts-icon">
+                    <img src="img/message-icon.png" alt="">
+                </div>
+
+                <div class="header__contacts-text">
+                    Email<br>
+                    <a href="mailto:contact@logistics.com">contact@logistics.com</a>
+                </div>
+            </div>
+
+            <div class="header__contacts-item">
+                <div class="header__contacts-icon">
+                    <img src="img/phone-icon.png" alt="">
+                </div>
+
+                <div class="header__contacts-text">
+                    Call Us<br>
+                    <a href="tel:(00) 112 365 489">(00) 112 365 489</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container header__bottom-wrapper">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <div class="dropdown">
+                        <button onclick="dropdownMob()" class="dropbtn">Pages
+                            <svg class="dropdown__arrow arrow__mob" width="10px" height="10px" fill="#fff"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use class="dropdown__arrow-use" xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        <div id="myDropdownMob" class="dropdown-content">
+                            <a href="components/page-blocks/about.html">About Us</a>
+                            <a href="components/page-blocks/services.html">Services</a>
+                            <a href="components/page-blocks/project.html">Project</a>
+                            <a href="components/page-blocks/blog.html">Blog</a>
+                            <a href="components/page-blocks/team.html">Team</a>
+                            <a href="components/page-blocks/contact.html">Contact</a>
+                            <a href="components/page-blocks/pricing.html">Pricing</a>
+                            <a href="components/page-blocks/licenses.html">Licenses</a>
+                            <a href="components/page-blocks/protection.html">Protection</a>
+                        </div>
+                    </div>
+    
+                    <a href="#">Project</a>
+                    <a href="#">Contact</a>
+                    
+                </nav>
+                <button class="button header__button">Request Quote<span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+			<div class="container">
+				<div class="intro__wrapper">
+					<div class="intro__theme">
+						Logistics & Supply Chain Solutions
+					</div>
+
+					<div class="intro__title">
+						Your Gateway
+						to any Destination in the World
+					</div>
+
+					<div class="intro__subtitle">
+						In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula
+						ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus
+						lectus.
+					</div>
+
+					<div class="button button__intro" style="display: inline-block;">Explore More</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="we-do">
+			<div class="container">
+				<div class="we-do__wrapper">
+					<div class="we-do__info">
+						<div class="we-do__theme">
+							What We Do
+						</div>
+
+						<div class="we-do__title">
+							Safe & Reliable Cargo Solutions
+						</div>
+					</div>
+
+
+					<div class="we-do__items">
+						<div class="we-do__item">
+							<div class="we-do__item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#we-do-icon-1"></use>
+								</svg>
+							</div>
+
+							<div class="we-do__item-info">
+								<div class="we-do__item-title">
+									Sea Transport Services
+								</div>
+
+								<div class="we-do__item-text">
+									Following the quality of our service thus having gained trust of our many clients.
+								</div>
+							</div>
+						</div>
+
+						<div class="we-do__item">
+							<div class="we-do__item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#we-do-icon-2"></use>
+								</svg>
+							</div>
+
+							<div class="we-do__item-info">
+								<div class="we-do__item-title">
+									Warehousing Services
+								</div>
+
+								<div class="we-do__item-text">
+									Following the quality of our service thus having gained trust of our many clients.
+								</div>
+							</div>
+						</div>
+
+						<div class="we-do__item">
+							<div class="we-do__item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#we-do-icon-3"></use>
+								</svg>
+							</div>
+
+							<div class="we-do__item-info">
+								<div class="we-do__item-title">
+									Air Fright Services
+								</div>
+
+								<div class="we-do__item-text">
+									Following the quality of our service thus having gained trust of our many clients.
+								</div>
+							</div>
+						</div>
+
+						<div class="we-do__item">
+							<div class="we-do__item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#we-do-icon-4"></use>
+								</svg>
+							</div>
+
+							<div class="we-do__item-info">
+								<div class="we-do__item-title">
+									Local Shipping Services
+								</div>
+
+								<div class="we-do__item-text">
+									Following the quality of our service thus having gained trust of our many clients.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-us__background"></section>
+
+
+		<div class="why-us container">
+			<div class="why-us__wrapper">
+				<div class="why-us__info">
+					<div class="why-us__info-left">
+						<div class="why-us__info-theme">
+							Why Us
+						</div>
+
+						<div class="why-us__info-title">
+							We provide full range global logistics solution
+						</div>
+
+						<div class="why-us__info-text">
+							Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+							thinking to further the overall value proposition.<br><br>
+
+							Organically grow the holistic world view of disruptive innovation via workplace
+							diversity and empowerment.
+						</div>
+
+						<div class="why-us__info-features why-us__features-desk">
+							<div class="why-us__info-features-item">
+								<div class="why-us__info-features-icon">
+									<img src="img/why-us-icon-1.png" alt="">
+								</div>
+
+								<div class="why-us__info-features-text">
+									Delivery on Time
+								</div>
+							</div>
+
+							<div class="why-us__info-features-item">
+								<div class="why-us__info-features-icon">
+									<img src="img/why-us-icon-2.png" alt="">
+								</div>
+
+								<div class="why-us__info-features-text">
+									Optimized Travel Cost
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="why-us__info-right">
+						<img src="img/why-us-plane.jpg" alt="">
+						<img class="why-us__info-right-woman" src="img/why-us-woman.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="why-us__info-features why-us__features-mob">
+					<div class="why-us__info-features-item">
+						<div class="why-us__info-features-icon">
+							<img src="img/why-us-icon-1.png" alt="">
+						</div>
+
+						<div class="why-us__info-features-text">
+							Delivery on Time
+						</div>
+					</div>
+
+					<div class="why-us__info-features-item">
+						<div class="why-us__info-features-icon">
+							<img src="img/why-us-icon-2.png" alt="">
+						</div>
+
+						<div class="why-us__info-features-text">
+							Optimized Travel Cost
+						</div>
+					</div>
+				</div>
+
+				<div class="why-us__achievements">
+					<div class="why-us__achievement">
+						<div class="why-us__achievement-number">
+							1294
+						</div>
+
+						<div class="why-us__achievement-square"></div>
+
+						<div class="why-us__achievement-text">
+							Delivered Packages
+						</div>
+					</div>
+
+					<div class="why-us__achievement">
+						<div class="why-us__achievement-number">
+							3594
+						</div>
+
+						<div class="why-us__achievement-square"></div>
+
+						<div class="why-us__achievement-text">
+							Satisfied Clients
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="portfolio">
+			<div class="container__wide">
+				<div class="portfolio__title">
+					Transporting Across The World
+				</div>
+
+				<div class="portfolio__items">
+					<div class="portfolio__item">
+						<div class="portfolio__item-bcg portfolio__item-1"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Liquid Transportation
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Premium Tankers
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolio__item">
+						<div class="portfolio__item-bcg portfolio__item-2"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Packaging Solutions
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Warehouse Management
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolio__item">
+						<div class="portfolio__item-bcg portfolio__item-3"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Contract Logistics
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Road Transportation
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolio__item">
+						<div class="portfolio__item-bcg portfolio__item-4"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Warehouse & Distribution
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Large Warehouse
+							</div>
+						</div>
+					</div>
+
+					<div class="portfolio__item">
+						<div class="portfolio__item-bcg portfolio__item-5"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Specialized Transport
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Ocean Transports
+							</div>
+						</div>
+					</div>
+
+					<div id="portfolio-hidden" class="portfolio__item hidden">
+						<div class="portfolio__item-bcg portfolio__item-1"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Liquid Transportation
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Premium Tankers
+							</div>
+						</div>
+					</div>
+
+					<div id="portfolio-hidden" class="portfolio__item hidden">
+						<div class="portfolio__item-bcg portfolio__item-2"></div>
+						<div class="portfolio__item-info">
+							<div class="portfolio__item-title">
+								Packaging Solutions
+							</div>
+
+							<div class="portfolio__item-subtitle">
+								Warehouse Management
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="button button__show-more" id="portfolio-show">More Work</button>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<div class="container">
+				<div class="testimonials__wrapper">
+					<div class="testimonials__theme">
+						Testimonials
+					</div>
+
+					<div class="testimonials__block">
+						<div class="testimonials__title">
+							What Our Customer Say
+						</div>
+
+						<div class="testimonials__navs">
+							<button class="testimonials__button testimonials-prev">
+								<svg class="testimonials__button-prev" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-arrow"></use>
+								</svg>
+							</button>
+							<button class="testimonials__button testimonials-next">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="testimonials__slider">
+						<div class="testimonials__slider-item">
+							<div class="testimonials__slider-item-top">
+								<div class="testimonials__slider-item-block">
+									<div class="testimonials__slider-item-ava">
+										<img src="img/testimonials-ava-1.jpg" alt="">
+									</div>
+
+									<div class="testimonials__slider-item-info">
+										<div class="testimonials__slider-item-name">
+											Kathleen Smith
+										</div>
+
+										<div class="testimonials__slider-item-job">
+											Fuel Company
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slider-item-quote">
+									<img src="img/testimonials-quote.png" alt="">
+								</div>
+							</div>
+
+							<div class="testimonials__slider-item-text">
+								Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+								thinking to further the overall value proposition. Organically grow the holistic world
+								view of disruptive innovation via workplace diversity and empowerment.
+							</div>
+
+							<div class="testimonials__slider-item-rating">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+							</div>
+						</div>
+
+						<div class="testimonials__slider-item testimonials__slider-item--blue">
+							<div class="testimonials__slider-item-top">
+								<div class="testimonials__slider-item-block">
+									<div class="testimonials__slider-item-ava">
+										<img src="img/testimonials-ava-2.jpg" alt="">
+									</div>
+
+									<div class="testimonials__slider-item-info">
+										<div class="testimonials__slider-item-name">
+											John Martin
+										</div>
+
+										<div class="testimonials__slider-item-job">
+											Restoration Company
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slider-item-quote">
+									<img src="img/testimonials-quote.png" alt="">
+								</div>
+							</div>
+
+							<div class="testimonials__slider-item-text testimonials__slider-item-text--white">
+								Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+								thinking to further the overall value proposition. Organically grow the holistic world
+								view of disruptive innovation via workplace diversity and empowerment.
+							</div>
+
+							<div class="testimonials__slider-item-rating">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+							</div>
+						</div>
+
+						<div class="testimonials__slider-item">
+							<div class="testimonials__slider-item-top">
+								<div class="testimonials__slider-item-block">
+									<div class="testimonials__slider-item-ava">
+										<img src="img/testimonials-ava-1.jpg" alt="">
+									</div>
+
+									<div class="testimonials__slider-item-info">
+										<div class="testimonials__slider-item-name">
+											Kathleen Smith
+										</div>
+
+										<div class="testimonials__slider-item-job">
+											Fuel Company
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slider-item-quote">
+									<img src="img/testimonials-quote.png" alt="">
+								</div>
+							</div>
+
+							<div class="testimonials__slider-item-text">
+								Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+								thinking to further the overall value proposition. Organically grow the holistic world
+								view of disruptive innovation via workplace diversity and empowerment.
+							</div>
+
+							<div class="testimonials__slider-item-rating">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+							</div>
+						</div>
+
+						<div class="testimonials__slider-item testimonials__slider-item--blue">
+							<div class="testimonials__slider-item-top">
+								<div class="testimonials__slider-item-block">
+									<div class="testimonials__slider-item-ava">
+										<img src="img/testimonials-ava-2.jpg" alt="">
+									</div>
+
+									<div class="testimonials__slider-item-info">
+										<div class="testimonials__slider-item-name">
+											John Martin
+										</div>
+
+										<div class="testimonials__slider-item-job">
+											Restoration Company
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slider-item-quote">
+									<img src="img/testimonials-quote.png" alt="">
+								</div>
+							</div>
+
+							<div class="testimonials__slider-item-text testimonials__slider-item-text--white">
+								Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+								thinking to further the overall value proposition. Organically grow the holistic world
+								view of disruptive innovation via workplace diversity and empowerment.
+							</div>
+
+							<div class="testimonials__slider-item-rating">
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="img/sprite.svg#testimonials-star"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-choose">
+			<div class="container__wide">
+				<div class="why-choose__wrapper">
+					<div class="why-choose__left why-choose__left-desk">
+						<div class="why-choose__left-wrapper">
+							<img src="img/why-choose-plane.jpg" alt="">
+							<div class="why-choose__left-block">
+								<div class="why-choose__left-block-image">
+									<img src="img/why-choose-icon-plane.png" alt="">
+								</div>
+								<span>Moving your products across borders</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="why-choose__right">
+						<div class="why-choose__theme">
+							Why Choose
+						</div>
+
+						<div class="why-choose__title">
+							We create opportunity to reach potential
+						</div>
+
+						<div class="why-choose__text">
+							Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+							thinking to further the overall value proposition.
+						</div>
+
+						<div class="why-choose__left why-choose__left-mob">
+							<div class="why-choose__left-wrapper">
+								<img src="img/why-choose-plane.jpg" alt="">
+								<div class="why-choose__left-block">
+									<div class="why-choose__left-block-image">
+										<img src="img/why-choose-icon-plane.png" alt="">
+									</div>
+									<span>Moving your products across borders</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="why-choose__items">
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-1.png" alt="">
+								</div>
+
+								<span>Safe Package</span>
+							</div>
+
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-2.png" alt="">
+								</div>
+
+								<span>Ship Everyware</span>
+							</div>
+
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-3.png" alt="">
+								</div>
+
+								<span>Global Tracking</span>
+							</div>
+
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-4.png" alt="">
+								</div>
+
+								<span>24/7 Support</span>
+							</div>
+
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-5.png" alt="">
+								</div>
+
+								<span>In Time Delivery</span>
+							</div>
+
+							<div class="why-choose__item">
+								<div class="why-choose__item-icon">
+									<img src="img/why-choose-icon-6.png" alt="">
+								</div>
+
+								<span>Transparant Pricing</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team">
+			<div class="container">
+				<div class="team__top">
+					<div class="team__theme">
+						The Transporters
+					</div>
+
+					<div class="team__title">
+						Meet Expert Team
+					</div>
+				</div>
+
+				<div class="team__items">
+					<div class="team__item">
+						<div class="team__item-photo">
+							<img src="img/team-img-1.jpg" alt="">
+						</div>
+
+						<div class="team__item-info">
+							<div class="team__item-name">
+								Jessca Arow
+							</div>
+
+							<div class="team__item-position">
+								Designer
+							</div>
+
+							<div class="team__item-socials">
+								<a href="https://twitter.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#twitter"></use>
+									</svg>
+								</a>
+
+								<a href="https://www.facebook.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+
+								<a href="https://www.instagram.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team__item">
+						<div class="team__item-photo">
+							<img src="img/team-img-2.jpg" alt="">
+						</div>
+
+						<div class="team__item-info">
+							<div class="team__item-name">
+								John Smith
+							</div>
+
+							<div class="team__item-position">
+								Designer
+							</div>
+
+							<div class="team__item-socials">
+								<a href="https://www.linkedin.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#linkedin"></use>
+									</svg>
+								</a>
+
+								<a href="https://twitter.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#twitter"></use>
+									</svg>
+								</a>
+
+								<a href="https://www.facebook.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+
+								<a href="https://www.instagram.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team__item">
+						<div class="team__item-photo">
+							<img src="img/team-img-3.jpg" alt="">
+						</div>
+
+						<div class="team__item-info">
+							<div class="team__item-name">
+								Rebecca Tylor
+							</div>
+
+							<div class="team__item-position">
+								Designer
+							</div>
+
+							<div class="team__item-socials">
+								<a href="https://www.facebook.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+
+								<a href="https://www.instagram.com/">
+									<svg class="team__social" width="20px" height="20px"
+										xmlns="http://www.w3.org/2000/svg">
+										<use xlink:href="img/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="container">
+				<div class="contact__theme">
+					Contact
+				</div>
+
+				<div class="contact__wrapper">
+					<div class="contact__info">
+						<div class="contact__title">
+							Get in touch with us
+						</div>
+
+						<div class="contact__text">
+							Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative
+							thinking to further the overall value.
+						</div>
+
+						<div class="contact__info-items">
+							<div class="contact__info-item">
+								<div class="contact__info-item-icon">
+									<img src="img/message-icon.png" alt="">
+								</div>
+
+								<div class="contact__info-item-text">
+									Email<br>
+									<a href="mailto:contact@logistics.com">contact@logistics.com</a>
+								</div>
+							</div>
+
+							<div class="contact__info-item">
+								<div class="contact__info-item-icon">
+									<img src="img/phone-icon.png" alt="">
+								</div>
+
+								<div class="contact__info-item-text">
+									Call Us<br>
+									<a href="tel:(00) 112 365 489">(00) 112 365 489</a>
+								</div>
+							</div>
+
+							<div class="contact__info-item">
+								<div class="contact__info-item-icon">
+									<img src="img/time-icon.png" alt="">
+								</div>
+
+								<div class="contact__info-item-text">
+									Mon - Sat 9.00 - 18.00<br>
+									Sunday Closed
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact__form-wrapper">
+						<form action="#" class="contact__form">
+							<div class="contact__form-inputs">
+								<input type="text" name="name" id="name" placeholder="Your name">
+								<input type="email" name="email" id="email" placeholder="Email">
+								<input type="tel" name="phone" id="phone" placeholder="Phone Number">
+								<input type="text" name="city" id="city" placeholder="City">
+							</div>
+
+							<textarea name="message" id="message" cols="30" rows="10"
+								placeholder="Your Message"></textarea>
+
+							<button class="button button__form" type="submit">Submit Message</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="contact__companies">
+					<div class="contact__companies-item contact__companies-item-1"></div>
+					<div class="contact__companies-item contact__companies-item-2"></div>
+					<div class="contact__companies-item contact__companies-item-3"></div>
+					<div class="contact__companies-item contact__companies-item-4"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="container">
+				<div class="blog__wrapper">
+					<div class="blog__info">
+						<div class="blog__theme">
+							Our Blog
+						</div>
+
+						<div class="blog__title">
+							Our Latest News
+						</div>
+					</div>
+
+					<div class="blog__items">
+						<div class="blog__item">
+							<div class="blog__item-image">
+								<img src="img/blog-1.jpg" alt="">
+								<span>Read More</span>
+							</div>
+
+							<div class="blog__info-wrapper">
+								<div class="blog__item-date">
+									<div class="blog__item-date-icon">
+										<img src="img/blog-calendar.png" alt="">
+									</div>
+
+									<div class="blog__item-date-number">
+										08
+									</div>
+
+									<div class="blog__item-date-month">
+										September
+									</div>
+								</div>
+
+								<div class="blog__item-info">
+									<div class="blog__item-info-title">
+										Inland freight a worthy solution for your business
+									</div>
+
+									<div class="blog__item-info-subtitle">
+										We are dedicated in creating added value for our customers by implementing
+										modern
+										technology in our work.
+									</div>
+
+									<ul class="blog__item-info-list">
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog__item">
+							<div class="blog__item-image">
+								<img src="img/blog-2.jpg" alt="">
+								<span>Read More</span>
+							</div>
+
+							<div class="blog__info-wrapper">
+								<div class="blog__item-date">
+									<div class="blog__item-date-icon">
+										<img src="img/blog-calendar.png" alt="">
+									</div>
+
+									<div class="blog__item-date-number">
+										12
+									</div>
+
+									<div class="blog__item-date-month">
+										September
+									</div>
+								</div>
+
+								<div class="blog__item-info">
+									<div class="blog__item-info-title">
+										How technology can help redraw the supply chain map
+									</div>
+
+									<div class="blog__item-info-subtitle">
+										We are dedicated in creating added value for our customers by implementing
+										modern
+										technology in our work.
+									</div>
+
+									<ul class="blog__item-info-list">
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog__item">
+							<div class="blog__item-image">
+								<img src="img/blog-3.jpg" alt="">
+								<span>Read More</span>
+							</div>
+
+							<div class="blog__info-wrapper">
+								<div class="blog__item-date">
+									<div class="blog__item-date-icon">
+										<img src="img/blog-calendar.png" alt="">
+									</div>
+
+									<div class="blog__item-date-number">
+										25
+									</div>
+
+									<div class="blog__item-date-month">
+										September
+									</div>
+								</div>
+
+								<div class="blog__item-info">
+									<div class="blog__item-info-title">
+										Five things you should have ready for your broker
+									</div>
+
+									<div class="blog__item-info-subtitle">
+										We are dedicated in creating added value for our customers by implementing
+										modern
+										technology in our work.
+									</div>
+
+									<ul class="blog__item-info-list">
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+										<li>Urgent transport solutions</li>
+										<li>Reliable & experienced staffs</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div id="blog__hidden" class="blog__item hidden">
+							<div class="blog__item-image">
+								<img src="img/blog-1.jpg" alt="">
+								<span>Read More</span>
+							</div>
+
+							<div class="blog__item-date">
+								<div class="blog__item-date-icon">
+									<img src="img/blog-calendar.png" alt="">
+								</div>
+
+								<div class="blog__item-date-number">
+									26
+								</div>
+
+								<div class="blog__item-date-month">
+									September
+								</div>
+							</div>
+
+							<div class="blog__item-info">
+								<div class="blog__item-info-title">
+									Inland freight a worthy solution for your business
+								</div>
+
+								<div class="blog__item-info-subtitle">
+									We are dedicated in creating added value for our customers by implementing modern
+									technology in our work.
+								</div>
+
+								<ul class="blog__item-info-list">
+									<li>Urgent transport solutions</li>
+									<li>Reliable & experienced staffs</li>
+									<li>Urgent transport solutions</li>
+									<li>Reliable & experienced staffs</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="blog__hidden" class="blog__item hidden">
+							<div class="blog__item-image">
+								<img src="img/blog-2.jpg" alt="">
+								<span>Read More</span>
+							</div>
+
+							<div class="blog__item-date">
+								<div class="blog__item-date-icon">
+									<img src="img/blog-calendar.png" alt="">
+								</div>
+
+								<div class="blog__item-date-number">
+									28
+								</div>
+
+								<div class="blog__item-date-month">
+									September
+								</div>
+							</div>
+
+							<div class="blog__item-info">
+								<div class="blog__item-info-title">
+									How technology can help redraw the supply chain map
+								</div>
+
+								<div class="blog__item-info-subtitle">
+									We are dedicated in creating added value for our customers by implementing modern
+									technology in our work.
+								</div>
+
+								<ul class="blog__item-info-list">
+									<li>Urgent transport solutions</li>
+									<li>Reliable & experienced staffs</li>
+									<li>Urgent transport solutions</li>
+									<li>Reliable & experienced staffs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<button class="button button__show-more" id="blog-show">More Blog</button>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+    <img class="footer__image" src="img/footer-bcg.jpg" alt="">
+
+    <div class="footer__top">
+        <div class="container footer__heading-wrapper">
+            <div class="footer__heading-wide footer__logo">
+                <img src="img/sprite.svg#logo" alt="">
+            </div>
+
+            <div class="footer__heading-small footer__links-title">Pages</div>
+            <div class="footer__heading-small footer__links-title">Utility</div>
+            <div class="footer__heading-wide footer__subscribe-title">Subscribe</div>
+        </div>
+    </div>
+
+    <div class="footer__wrapper container">
+        <div class="footer__info">
+            <div class="footer__info-text">
+                Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further
+                the
+                overall value proposition.
+            </div>
+
+            <div class="footer__info-item">
+                <div class="footer__info-item-icon">
+                    <img src="img/message-icon.png" alt="">
+                </div>
+
+                <div class="footer__info-item-text">
+                    Email<br>
+                    <a href="mailto:contact@logistics.com">contact@logistics.com</a>
+                </div>
+            </div>
+
+            <div class="footer__info-item">
+                <div class="footer__info-item-icon">
+                    <img src="img/phone-icon.png" alt="">
+                </div>
+
+                <div class="footer__info-item-text">
+                    Call Us<br>
+                    <a href="tel:(00) 112 365 489">(00) 112 365 489</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__links">
+            <a href="" class="footer__link">About Us</a>
+            <a href="" class="footer__link">Our Team</a>
+            <a href="" class="footer__link">Our Project</a>
+            <a href="" class="footer__link">Pricing</a>
+            <a href="" class="footer__link">Contact</a>
+        </div>
+
+        <div class="footer__links">
+            <a href="" class="footer__link">Style Guide</a>
+            <a href="" class="footer__link">Changelog</a>
+            <a href="" class="footer__link">Licenses</a>
+            <a href="" class="footer__link">Protected</a>
+            <a href="" class="footer__link">Not Found</a>
+        </div>
+
+        <div class="footer__subscribe">
+
+
+            <div class="footer__subscribe-form">
+                <form action="">
+                    <input type="text" placeholder="Email here" name="footer-email">
+                    <div class="footer__subscribe-bottom">
+                        <button class="button footer__button" type="submit">Send Now</button>
+                        <div class="footer__socials">
+                            <a href="https://www.linkedin.com/">
+                                <svg width="23px" height="23px" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+
+                            <a href="https://twitter.com/">
+                                <svg width="23px" height="23px" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.facebook.com/">
+                                <svg width="23px" height="23px" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom container">
+        <div class="footer__bottom-copyright">
+            Copyright © 2023
+        </div>
+
+        <div class="footer__bottom-links">
+            <a href="">Style Guide</a>
+            <a href="">Licenses</a>
+            <a href="">Changelog</a>
+            <a href="">Password</a>
+        </div>
+    </div>
+</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+.header {
+  position: relative;
+  z-index: 4;
+
+  &__logo {
+    max-width: 210px;
+    width: 100%;
+  }
+
+  &__top {
+    background-color: #091242;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 160px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &-icon {
+      width: 64px;
+      height: 64px;
+      margin-right: 15px;
+    }
+
+    &-text {
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+
+      & a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    background: rgba(9, 18, 66, 0.25);
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      & nav {
+        display: flex;
+        align-items: center;
+
+        & a,
+        button {
+          position: relative;
+          font-family: "Krub-SemiBold", sans-serif;
+          font-size: 16px;
+          text-decoration: none;
+          color: #fff;
+          padding: 30px 0px;
+          transition: all 0.2s ease-in-out;
+
+          &:after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            background-color: #fff;
+            transition: all 0.2s ease-in-out;
+          }
+
+          &:hover {
+            &:after {
+              content: "";
+              width: 100%;
+            }
+          }
+        }
+
+        & a:nth-child(1):not(.dropbtn) {
+          padding-left: 0;
+        }
+
+        & span {
+          display: inline-block;
+          width: 1px;
+          height: 19px;
+          background-color: #fff;
+          margin: 0 30px;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+
+    &-socials {
+      & a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: 20px;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          margin-right: 50px;
+        }
+
+        & svg {
+          fill: white;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            &.header__instagram {
+              fill: rgb(226, 159, 222);
+            }
+
+            &.header__facebook {
+              fill: rgb(113, 113, 234);
+            }
+
+            &.header__twitter {
+              fill: rgb(90, 170, 220);
+            }
+
+            &.header__linkedin {
+              fill: rgb(55, 95, 228);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__mob {
+    display: none;
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: #091242;
+    z-index: 100;
+    transition: all .4s ease-in-out;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-logo img {
+      max-width: 150px;
+      width: 100%;
+    }
+
+    &-menu {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        transform: rotate(0deg);
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 12px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        transform: rotate(0deg);
+        transition: all 0.2s ease-in-out;
+      }
+
+      &-burger {
+        display: block;
+        width: 30px;
+        height: 2px;
+        opacity: 1;
+        background-color: #fff;
+        transition: opacity 0.2s ease-in-out;
+
+        &.active {
+          opacity: 0;
+        }
+      }
+
+      &.active {
+        &.header__mob-menu::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        &.header__mob-menu::after {
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+
+        & .header__mob-menu-burger {
+          width: 0;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &-body {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: scroll;
+      top: 0;
+      left: 0;
+      background-color: #091242;
+
+      .header__mob-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #091242;
+        z-index: 320;
+      }
+
+      .header__mob-logo img {
+        padding: 0px 15px;
+        max-width: 180px;
+      }
+
+      .header__mob-menu {
+        padding: 0 15px;
+      }
+
+      .header__mob-body {
+        display: block;
+        margin-top: 60px;
+        padding-bottom: 30px;
+      }
+
+      .header__contacts {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .header__bottom-wrapper {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .header__bottom-wrapper nav {
+        flex-direction: column;
+      }
+
+      .header__bottom-right {
+        flex-direction: column;
+      }
+
+      .header__bottom-socials a:last-child {
+        margin-right: 0;
+      }
+
+      .header__button {
+        margin-top: 15px;
+      }
+
+      .header__bottom {
+        margin-top: 20px;
+      }
+
+      .header__bottom-wrapper nav a,
+      .header__bottom-wrapper nav button {
+        font-size: 21px;
+      }
+
+      .header__contacts-item:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      @media (max-width: 676px) {
+        .header__contacts {
+          flex-direction: column;
+        }
+
+        .header__contacts-item {
+          max-width: 210px;
+          width: 100%;
+        }
+
+        .header__contacts-item:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: 479px) {
+          .header__bottom-wrapper nav a,
+          .header__bottom-wrapper nav button {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropbtn {
+  padding: 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  & button {
+    position: relative;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+
+    & svg {
+      position: relative;
+      transform: rotate(0deg);
+      transition: transform 0.2s ease-in-out;
+      z-index: -1;
+    }
+
+    & use {
+      position: relative;
+      z-index: -1;
+    }
+
+    & svg.opened {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-content {
+    font-family: serif;
+    display: none;
+    position: absolute;
+    background-color: #0f1d68;
+    min-width: 160px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    & a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: #1d36c0;
+      }
+    }
+  }
+}
+
+#myDropdown a,
+#myDropdownMob a {
+  font-family: "Krub-SemiBold", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px;
+
+  &:hover {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .header__top-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__contacts-icon img,
+  .header__contacts-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__logo {
+    max-width: 195px;
+  }
+
+  .header__bottom-wrapper nav span {
+    margin: 0 15px;
+  }
+
+  .header__bottom-wrapper nav a,
+  .header__bottom-wrapper nav button {
+    padding: 15px 0;
+  }
+
+  .header__bottom-socials a {
+    margin-right: 5px;
+  }
+
+  .header__bottom-socials a:last-child {
+    margin-right: 25px;
+  }
+
+  .header__bottom-socials {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__desk {
+    display: none;
+  }
+
+  .header__mob {
+    display: block;
+  }
+}
