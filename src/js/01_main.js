@@ -81,3 +81,53 @@ burgerBtn.addEventListener('click', (e) => {
   headerContainer.classList.toggle('active');
   document.body.classList.toggle('fixed');
 });
+
+function onEntry(entry) {
+  entry.forEach(change => {
+      if (change.isIntersecting) {
+          change.target.classList.add('element-show');
+      }
+  });
+}
+
+let options = {
+  threshold: [0.5]
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
+var numberOne = document.querySelector('.number-1'),
+		numberOneTop = numberOne.getBoundingClientRect().top,
+    startOne = +numberOne.innerHTML, endOne = +numberOne.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+		if(window.pageYOffset > numberOneTop - window.innerHeight / 2) {
+    		this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+          numberOne.innerHTML = ++startOne;
+            if(startOne == endOne) {
+            		clearInterval(interval);
+            }
+        }, 1);
+    }
+});
+
+var number = document.querySelector('.number-2'),
+		numberTop = number.getBoundingClientRect().top,
+    start = +number.innerHTML, end = +number.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+		if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+    		this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+        		number.innerHTML = ++start;
+            if(start == end) {
+            		clearInterval(interval);
+            }
+        }, 2);
+    }
+});

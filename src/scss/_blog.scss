@@ -9,6 +9,10 @@
 
   &__info {
     text-align: center;
+
+    &-wrapper {
+      display: flex;
+    }
   }
 
   &__theme {
